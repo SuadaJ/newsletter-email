@@ -1,0 +1,271 @@
+/** General Styles **/
+body{
+    font-family: sans-serif;
+    width: 100vw;
+    margin: 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: xx-large;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 10px 0 20px 0;
+}
+h2{
+    margin: 10px 0 20px 0;
+}
+button{
+    display: block;
+    width: 270px;
+    height: 55px;
+    margin-top: 20px;
+    border-radius: 35px;
+    border: none;
+    background-color: rgb(63, 63, 251);
+    color: white;
+    font-size: large;
+}
+.article{
+    width: 100%;
+}
+.article-tag{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.article-tag__bullet-point{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-color: rgb(63, 63, 251);
+    border-radius: 50%;
+}
+.article-text{
+    line-height: 1.6rem;
+}
+.article-text.bold{
+    font-weight: bolder;
+    display: inline;
+}
+.article-text.italic{
+    font-style: italic;
+}
+.article-image{
+    width: 100%;
+    margin: 50px 0;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+
+/** All Content Container **/
+.container{
+    width: 96%;
+    margin: 2%;
+    max-width: 640px;
+    background-color: white;
+}
+
+/** Header Section **/
+header{
+    width: 100%;
+    padding: 40px 0 0 0;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(63, 63, 251);
+    text-transform: capitalize;
+}
+.header__date{
+    text-transform: capitalize;
+    font-size: larger;
+}
+
+/** Welcome Message Section **/
+.welcome-update{
+    width: 100%;
+    margin-bottom: 35px;
+}
+.welcome-update__image{
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+.welcome-update__image-caption{
+    font-size: small;
+    color: grey;
+    line-height: 1rem;
+}
+.welcome-update__heading{
+    margin: 50px 0 20px 0;
+}
+.welcome-update__content-text{
+    line-height: 1.5rem;
+}
+.welcome-update__content-text--list{
+    margin-bottom: 35px;
+}
+.welcome-update__content-text--list-item{
+    margin: 12px 0;
+}
+.welcome-update__content-text.bold{
+    font-weight: bolder;
+}
+/** Welcom Message Article **/
+.welcome-update__content-illustration{
+    width: 100%;
+    margin: 55px 0 0 0;
+}
+.welcome-update__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    margin-bottom: 20px;
+}
+.welcome-update__grid--item-cryptoname{
+    display: flex;
+    align-items: flex-start;
+}
+.icon.welcome-update{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.welcome-update__crypto-info{
+    text-transform: capitalize;
+    line-height: 1.5rem;
+}
+.welcome-update__crypto-info.bold{
+    font-weight: 600;
+}
+.welcome-update__crypto-info.small{
+    font-size: smaller;
+}
+.welcome-update__disclaimer{
+    font-size: small;
+    color: grey;
+    font-weight: lighter;
+    margin: 50px 0 0 0;
+}
+.welcome-update__button{
+    margin-top: 20px;
+}
+
+
+/** Horizontal Line Divider **/
+.hline{
+    width: 100%;
+    height: 1px;
+    background-color: grey;
+    margin: 30px 0;
+    opacity: 0.5;
+}
+
+/** Article One **/
+.article-one__list{
+    line-height: 1.6rem;
+}
+.article-one__list--item{
+    margin: 12px 0;
+}
+.article-one__list--item.bold{
+    font-weight: bolder;
+    display: inline;
+}
+
+/** Article Five **/
+.article-five-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.article-five-coinname{
+    margin: 20px 15px 20px 0;
+}
+.article-five-block__left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon.coin{
+    width: 30px;
+    height: 30px;
+}
+
+/** Footer **/
+footer{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer__logo{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(63, 63, 251);
+}
+.footer__app-links{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.app-link{
+    width: 145px;
+    margin-right: 15px;
+}
+.app-link.ggl{
+    width: 155px;
+}
+
+/** Disclaimer **/
+.disclaimer{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.disclaimer-text{
+    font-size: small;
+    color: grey;
+    line-height: 1.4rem;
+}
+
+/** Legal and Company Info Section**/
+.legal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.legal-text{
+    font-size: small;
+    line-height: 1.4rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/** Media Queries **/
+/** Medium Mobile**/
+@media only screen and (max-width: 375px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    button{
+        width: 220px;
+        height: 55px;
+        font-size: medium;
+    }
+    .welcome-update__grid{
+        grid-template-columns: 1fr 1fr;
+        margin-left: 40px;
+    }
+}
